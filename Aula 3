@@ -67,4 +67,4 @@ print()
 
 print("4)")
 p = "Python é show"
-print(p, "-", bool(p))
+print(p, "-", True)
