@@ -1,0 +1,70 @@
+# Identação - organização e espaçamento do código
+# Concatenação - juntar dados
+
+idade = "25"
+nome = "pedro"
+endereco = "rua"
+
+# Tipos de Concatenação em Python:
+
+print(idade, nome, endereco)
+print(idade + nome + endereco) # não aceita tipos diferentes de variáveis
+print(f"{idade} {nome} {endereco}")
+print("%s %s %s"%(idade,nome,endereco))
+print("{} {} {}" .format(idade,nome,endereco))
+print()
+
+# Com dados literais:
+
+print('idade:', idade,'Nome:',nome,'Endereço:',endereco)
+print('Idade: '+idade + ' '+'Nome: '  + nome +' '+'Endereço: ' +endereco)
+print(f'idade: {idade} Nome: {nome} Endereço: {endereco}')
+print('Idade: %s Nome: %s Endereço: %s'%(idade, nome, endereco))
+print('Idade: {} Nome: {} Endereço: {}'.format(idade, nome, endereco))
+print()
+
+# Funções Castings - Transforma a variável em outro tipo:
+
+peso = 'teste'
+altura = 1.70
+
+print(bool(peso))
+print(str(peso))
+print(int(altura))
+print(float(altura))
+print()
+
+# Docstring ''' - usado para explicar algo DENTRO de uma função, ex.:
+
+peso = 'teste'
+altura = 1.70
+'''Esta função serve para...'''
+print(bool(peso))
+print(str(peso))
+print()
+
+# 1 - Crie um programa para efetuar a leitura de um número real e apresentar o resultado do cubo deste número.
+# 2 - Crie 3 variáveis para armazenar nomes de frutas. Em seguida, concatene-as .
+# 3 - Peça ao usuário para digitar dois números inteiros e armazene-os em variáveis. Realize a concatenação desses números.
+# 4 - Crie uma variável para armazenar a palavra "Python é show". Em seguida, adicione um dado boleano ao final da palavra usando a concatenação e exiba o resultado.
+print("1)")
+num = float(input("Digite um número real: "))
+print("Este número elevado a 3 é: ", num**3)
+print()
+
+print("2)")
+maca = "maçã"
+banana = "banana"
+uva = "uva"
+print(maca, banana, uva)
+print()
+
+print("3)")
+n1 = int(input("Digite um número inteiro: "))
+n2 = int(input("Digite outro número inteiro: "))
+print("Os números escolhidos foram: ", n1, " e ", n2)
+print()
+
+print("4)")
+p = "Python é show"
+print(p, "-", bool(p))
