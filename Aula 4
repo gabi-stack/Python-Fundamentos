@@ -1,0 +1,115 @@
+import random
+
+# aleatorio = random.random()
+maquina = random.randint(1,10)
+chute = int(input("Chute um número de 1 a 10: "))
+print("Computador: ", maquina)
+if maquina == chute:
+    print("Você acertou em cheio! *o*")
+else:
+    print("A máquina ganhou :(")
+
+
+import random
+
+opcao = ['Pedra', 'Papel', 'Tesoura']
+escolha_pc = random.choice(opcao)
+escolha = input('Escolha um: ')
+
+if escolha == 'Pedra' and escolha_pc == 'Pedra':
+    print('O pc escolheu ', escolha_pc)
+    print('Empate')
+elif escolha == 'Papel' and escolha_pc == 'Papel':
+    print('O pc escolheu ', escolha_pc)
+    print('Empate')
+elif escolha == 'Tesoura' and escolha_pc == 'Tesoura':
+    print('O pc escolheu ', escolha_pc)
+    print('Empate')
+
+elif escolha == 'Papel' and  escolha_pc == 'Tesoura':
+    print('O pc escolheu ', escolha_pc)
+    print('A maquina ganhou!')
+elif escolha == 'Pedra' and escolha_pc == 'Papel':
+    print('O pc escolheu ', escolha_pc)
+    print('O Pc ganhou!')
+elif escolha  == 'Tesoura' and escolha_pc == 'Pedra':
+    print('O pc escolheu ', escolha_pc)
+    print('O Pc ganhoi!')
+    
+elif escolha  == 'Tesoura' and escolha_pc == 'Papel':
+    print('O pc escolheu ', escolha_pc)
+    print('Você ganhou')
+elif escolha  == 'Pedra' and escolha_pc == 'Tesoura':
+    print('O pc escolheu ', escolha_pc)
+    print('Você ganhou')
+elif escolha == 'Papel' and escolha_pc == 'Pedra':
+    print('O pc escolheu ', escolha_pc)
+    print('Você ganhou')
+else:
+    print('Digite algo válido!')
+
+
+
+
+
+import random
+
+opcao = [1, 2, 3]
+pc = random.choice(opcao)
+print("1=Pedra, 2=Papel, 3=Tesoura")
+user = input("Digite o número correspondente à sua opção: ")
+ganhou = "Eba! Você ganhou! :D"
+perdeu = "Ah, você perdeu :("
+print(pc)
+
+if pc == user:
+    print("Empate!")
+elif pc == 1 and user == 3:
+    print(perdeu)
+elif pc == 1 and user == 2:
+    print(ganhou)
+elif pc == 2 and user == 1:
+    print(perdeu)
+elif pc == 2 and user == 3:
+    print(ganhou)
+elif pc == 3 and user == 1:
+    print(ganhou)
+elif pc == 3 and user == 2:
+    print(perdeu)
+
+
+
+
+# Exercício 1: Verificação de Número Positivo - Escreva um programa em Python que solicite ao usuário um número inteiro e verifique se o número é positivo, negativo ou zero. Em seguida, exiba uma mensagem apropriada de acordo com o resultado da verificação. 
+# Exercício 2: Classificação de Triângulos - Escreva um programa em Python que receba três comprimentos de lados de um triângulo e determine se o triângulo é equilátero, isósceles ou escaleno. 
+# Exercício 3: Verifique se o usuário é maior de idade e pode entrar no show, escreva um programa que peça a usuário a idade e decida se ele pode entrar no show.
+
+print("Exercício 1")
+n = int(input("Digite um número inteiro: "))
+if n < 0:
+    print("Seu número é negativo.")
+elif n == 0:
+    print("Seu número é igual a 0.")
+elif n > 0:
+    print("Seu número é positivo.")
+print()
+
+print("Exercício 2")
+l1 = float(input("Lado 1: "))
+l2 = float(input("Lado 2: "))
+l3 = float(input("Lado 3: "))
+
+if l1 == l2 == l3:
+    print("Equilátero")
+elif l1 != l2 != l3:
+    print("Escaleno")
+else:
+    print("Isóceles")
+print()
+
+print("Exercício 3")
+idade = int(input("Digite sua idade: "))
+if idade < 18:
+    print("Você é menor de idade e não pode entrar no show!")
+else:
+    print("Você pode entrar no show!")
