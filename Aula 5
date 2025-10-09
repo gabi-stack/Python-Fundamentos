@@ -1,0 +1,86 @@
+import random
+chances = 3
+
+while chances > 0:
+    chances = chances -1
+    pc = random.randint(1,10)
+    chute = int(input("Chute um número: "))
+    print("O pc jogou: ", pc)
+    if pc == chute:
+        print("Você acertou!")
+        break
+    else:
+        print("Você errou!")
+        print("Você tem ", chances, " chance(s)")
+else:
+    print("Acabaram as suas tentativas!")
+print()
+
+import time
+
+for i in range(10):
+   print("O valor de i é atualmente", i)
+   # time.sleep(1)
+print()
+
+for i in range(2, 8):
+    print("O valor de i é atualmente", i)
+    # time.sleep(1)
+print()
+
+for chance in range(3):
+    
+    npc = random.randint(1,10)
+    chutes = int(input("Chute um número: "))
+    print("O pc jogou: ", npc)
+    if npc == chutes:
+        print("Você acertou!")
+        break
+    else:
+        print("Você errou!")
+        print("Você tem ", chance, " chance(s)")
+else:
+    print("Acabaram as suas tentativas!")
+print()
+
+# ATIVIDADE
+# Crie um sistema de notas, utilizando While ou for, com as seguintes operações:
+# - Sistema de notas de alunos
+# - Acesso a conta com condicionais
+# - 3 chances de acessar o sistema
+# - Após errar 3 x mensagem que diga que a conta bloqueada 
+# - Inserir notas 
+# - Fazer a média
+
+senha_cad  = '123'
+login_cad = 'teste'
+
+d = input('Deseja acessar o sistema? ')
+while  d  == 'sim':
+    senha = input('Senha: ')
+    login = input('Login: ')
+    if senha == senha_cad and login == login_cad:
+        print('Seja bem vindo(a)')
+        quantidade = int(input('Quantidade de alunos: '))
+        for n in range(quantidade):
+            nome = input('Nome do aluno: ')
+            nota1 = float(input('Nota 1: '))
+            nota2 = float(input('Nota 2: '))
+            nota3 = float(input('Nota 3: '))
+            media =  (nota1+nota2+nota3)/3
+            
+            print('A média de', nome, 'é:', media) 
+            if media >=7:
+                print('Aluno aprovado!')
+            elif media >=5 and media <7:
+                print('Aluno em recuperação.')
+            else:
+                print('Aluno reprovado.')             
+            print('***'*10)
+        d  =  input('Deseja continuar? ')
+         
+    else:
+        print('Você digitou algo errado.')
+else: 
+    print('Até logo!')            
+
