@@ -1,2 +1,142 @@
 https://prairie-heath-fb8.notion.site/AULA-5-Operadores-L-gicos-844c65036d27429fb5beff619ddd1b2c?pvs=143
 
+# c = 0
+# for i in range(11):
+#     if i % 2 == 0:
+#        print(i)
+#        c = c + i
+# print('=', c)
+# print()
+
+# x =  int(input('Nº - '))
+# for n in range(11):
+#     d =  n * x
+#     print(x, 'X', n , '=', d)
+# print()
+
+# n   =   0
+# while n <= 10:
+#       z =  n * x
+#       print(x, 'X', n , '=', z)
+#       n = n + 1
+# print()
+
+# ano  =  int(input('Ano: '))
+# if (ano % 4 == 0 or ano % 400 == 0) and ano % 100 != 0:
+#     print('Ano bissexto')
+# else:
+#     print('Não é bissexto')
+# print()
+
+# lista  =  []
+# lista_int  =  [1,2,3]
+# lista_real  =  [1.,5.2,0.]
+# lista_string  =  ['zaa','aaa','faa']
+# # print(max(lista_string))
+
+# lista_boleana = [True,False]
+# lista_mista  = ['Ano','20', '5.0']
+# print(max(lista_mista))
+# # objeto =  flexivel mutável 
+# # estutura de dados 
+# #                 
+# lista_numerica = [1,0,30,60,80]
+# #                0  1 2 3  4
+# # print(lista_numerica[2])
+# # lista_numerica[0] = 100
+# # print(lista_numerica)
+# # print(lista_numerica[0] + lista_numerica[3])
+
+# # função 
+# # append()  extend()   +=()  -  atribuir haverá uma mudança
+
+# lista =  []
+# lista.append(100)
+# print(lista)
+
+
+
+# lista.extend([10,20,45,55,65])
+# print(lista)
+
+
+# lista +=(10,20,30,50,30, 65)
+# print(lista)
+
+# lista.insert(1,250)
+# print(lista)
+
+# # pop() remove() del() clear() - remover valor   
+
+# print(dir(lista))
+
+# # lista.pop()
+# # print(lista)
+
+# # lista.pop(0)
+# # print(lista)
+
+# # lista.remove(65)
+# # print(lista)
+
+# # del lista[2]
+# # print(lista)
+
+# # verificar a estrutura da lista 
+# # len sum max min count index copy  
+
+# print(len(lista))
+# print(max(lista))
+# print(min(lista))
+# print(lista.count(10))
+# x   = lista.copy()
+# print(x)
+# # lista.clear()
+
+# c  =  sorted(lista)
+
+# # lista.sort(reverse=True)
+# # print(c)
+
+# lista.reverse()
+# print(lista)
+
+# # # métodos 
+# # nome_lista.função()
+
+
+
+
+# # # funçãoes
+
+# # metodos(lista)
+
+lista_chave = ["cobra","ave","bola"]
+print(max(lista_chave, key=len))
+
+# quantidade =  int(input('quantidade = '))
+
+
+# lista_notas  = []
+# lista_nomes =  []
+
+
+# for n in range(quantidade):
+#     nome  =  input('Nome:')
+#     n1 = float(input('Nota 1 - '))
+#     n2 = float(input('Nota 2 - '))
+#     lista_nomes.append(nome)
+#     lista_notas.append(n1)
+#     lista_notas.append(n2)
+
+
+# print(lista_nomes)
+# print(lista_notas)    
+
+
+
+
+d  = [1,2,3]
+
+
+print(sum(d))
