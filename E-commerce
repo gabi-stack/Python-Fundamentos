@@ -1,0 +1,55 @@
+# Banco de Dados
+
+senha = "111"
+login = "@gabi"
+
+for i in range(3):
+    acesso_login = input("Digite seu login: ")
+    acesso_senha = input("Digite sua senha: ")
+    
+    if senha == acesso_senha and login == acesso_login:
+        print("Seja Bem Vindo(a) ao E-commerce X Sports!")
+        produtos = ["", "1 - Camiseta Nike", "2 - Tenis NB", "3 - Meias Z", "4 - Camiseta de Volei"]
+        valores = [0, 200.50, 750.00, 50.55, 350.70]
+        carrinho = []
+        meu_total = [] 
+        print("Produtos: ")
+        print(f'''
+                {produtos[1]} - R$ {valores[1]}
+                {produtos[2]} - R$ {valores[2]}
+                {produtos[3]} - R$ {valores[3]}
+                {produtos[4]} - R$ {valores[4]}''')
+        print()
+        escolha = input("Deseja fazer o pedido? ")
+        print()
+        
+        if escolha == "nao":
+            print("Obrigada, volte sempre!")
+            print()
+            break
+        
+        while escolha == "sim":
+            produto = int(input("Digite o ID do produto: "))
+            print()
+            carrinho.append(produtos[produto])
+            meu_total.append(valores[produto])
+            soma = sum(meu_total)
+            print("Seu carrinho:", carrinho)
+            print("Valor total: R$", soma)
+            print()
+            escolha = input("Deseja continuar comprando? ")
+            print()
+        else:
+            pagamentos = ["", "PIX", "Cartão de Crédito", "Cartão de Débito", "PAYPAL"]
+            pag = int(input(f'''Valor total: R$ {soma}\n1-PIX\n2-Cartão de Crédito\n3-Cartão de Débito\n4-PAYPAL\nEscolha a forma de pagamento: '''))
+            print()
+            print("Forma de pagamento escolhida:", pagamentos[pag])
+            print()
+            print("Obrigada, volte sempre!")
+            print()
+    else:
+        print("Você digitou algo errado!")
+        print()
+else:
+    print("Acesso bloqueado!")
+    print()
