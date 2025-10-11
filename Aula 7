@@ -1,0 +1,15 @@
+# ex 1
+a = 'Hello'
+print(a[-1])
+# ex 2
+num = 5
+print(type(num))
+# ex 3
+def default(x,y=5):
+    print(x,y)
+default(1)
+# ex 4
+n = [1,2,6,5]
+for i in n :
+    if i != 1:
+        print(i, end='')
