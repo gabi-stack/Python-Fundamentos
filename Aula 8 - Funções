@@ -59,3 +59,40 @@ def calculadora():
             print('Digite algo válido!')
 
 calculadora()
+
+# Exemplo de Calculadora (Variáveis Globais):
+
+n1 = float(input('='))
+n2 = float(input('='))
+
+def soma():
+    c = n1 + n2
+    print('Resultado = ', c)
+
+def sub():
+    c = n1 - n2
+    print('Resultado = ', c)    
+
+def multip():
+    c = n1 * n2
+    print('Resultado = ', c)  
+
+def div():
+    c = n1 / n2
+    print('Resultado = ', c)
+
+def calculadora():
+   while True:     
+        operacao = input('''Digite a operação que deseja: + | - | x | /\n''')    
+        if operacao == '+':
+            soma()
+        elif operacao == '-':
+            sub()
+        elif operacao == 'x':
+            multip()
+        elif operacao == '/':
+            div()
+        else:
+            print('Digite algo válido!')
+
+calculadora()
