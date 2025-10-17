@@ -1,0 +1,86 @@
+# Tuplas
+
+tupla = (1, 2)
+print (tupla)
+
+tupla += (3, 4)
+print (tupla)
+
+tupla = tupla * 2
+print (tupla)
+
+for n in tupla:
+    print(n)
+
+t = tuple(range(1,11))
+print(t)
+
+lista = []
+for n in range(1,11):
+    lista.append(n)
+    print(tuple(lista))
+
+# a = tuple(list(input()))
+# print(a)
+
+# Dicionários
+
+n_tel = {
+    "Gabi" : 119080980,
+    "Vivian" : 1198686677,
+    "Maíra" : 1198789879
+}
+
+pessoa1 = {
+    "nome" : "Gabrielle",
+    "idade" : "24",
+    "cursos" : ["Python", "Ads"]
+}
+
+pessoa1["endereço"]="rua 123"
+
+for n in pessoa1.items():
+    print(n)
+
+dados = {
+    'nomes' : [], 
+    'notas' : []
+    }
+
+nomes  = ['maria','julia']
+notas = [10,9]
+
+dados['nomes'].extend([nomes[0], nomes[1]])
+dados['notas'].extend([notas[0], notas[1]])
+
+# print(dados)
+
+
+# for n in dados.values():
+#     dados['nomes'].append(n)
+# print(dados)
+
+
+d = {
+'a':10,
+'b':30
+
+}
+
+chave = []
+valor  =  []
+
+
+for n,x in d.items():
+    chave.append(n)
+    valor.append(x)
+print(chave)
+print(valor)
+
+# ESTRUTURA DE DADOS
+
+variavel = 10
+lista = [1, 2, 3]
+tupla = (4, 5, 6)
+dicionario = {"nome": "gabi", "idade": 24}
+
