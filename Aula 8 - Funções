@@ -96,3 +96,35 @@ def calculadora():
             print('Digite algo válido!')
 
 calculadora()
+
+# Exemplo de Calculadora (Parâmetros):
+
+def soma(x,y):
+    return x + y
+
+def sub(x,y):
+    return x - y
+
+def mult(x,y):
+    return x * y
+
+def div(x,y):
+    return x / y
+
+def calculadora():
+    op  = input('+ | - | * | /')
+    x  = float(input('='))
+    y  = float(input('='))
+
+    if  op == '+':
+        print(soma(x, y))
+    elif op  == '-':
+        print(sub(x, y))
+    elif op  == '*':
+        print(soma(x, y)) 
+    elif op == '/':
+        print(soma(x, y))
+    else:
+        print('Digite algo  valido')               
+
+calculadora()
