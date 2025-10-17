@@ -1,0 +1,33 @@
+def saque(saldo, valor_saque):
+    return (saldo - valor_saque)
+
+def deposito(saldo, valor_deposito):
+    return (saldo + valor_deposito)
+
+def extrato (saldo):
+    return (saldo)
+
+def banco():
+   saldo = 5000
+   op = int(input('''1 - saque\n2 - deposito\n3 - extrato\nQual operação deseja realizar? '''))
+    
+   if op == 1:
+      valor_saque =  float(input('Valor do saque: '))
+      saque_  =  saque(saldo, valor_saque)
+      print('Saque:', f"{valor_saque:,.2f}")
+      print('Em conta: R$', f"{saque_:,.2f}")
+    
+   elif op == 2:
+      valor_deposito =  float(input('Valor do depósito: '))
+      deposito_  =  deposito(saldo, valor_deposito)
+      print('Depósito:', "{:,.2f}".format(valor_deposito))
+      print('Em conta: R$', "{:,.2f}".format(deposito_))
+
+   elif op == 3:
+      saldo_br = f"{saldo:,.2f}".replace(",","X").replace(".", ",").replace("X", ".")
+      print('Em conta: R$', saldo_br)
+    
+   else:
+      print("Operação Encerrada!")
+
+banco()
