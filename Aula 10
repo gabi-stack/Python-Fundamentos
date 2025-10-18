@@ -84,3 +84,28 @@ lista = [1, 2, 3]
 tupla = (4, 5, 6)
 dicionario = {"nome": "gabi", "idade": 24}
 
+# Try and Except
+
+def calculo():
+    try:
+        n1 = int(input("= "))
+        n2 = int(input("= "))
+        div = n1/n2
+        print(div)
+    
+    except ZeroDivisionError:
+        print("Erro ao dividir por zero.")
+    
+    except ValueError:
+        print("Insira apenas números inteiros.")
+
+    except SyntaxError:
+        print("Erro de sintaxe.")
+
+    else:
+        print("Erro não identificado.")
+
+    finally:
+        print("Fim do cálculo")
+
+calculo()
