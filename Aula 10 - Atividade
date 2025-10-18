@@ -1,0 +1,41 @@
+# Cálculo de Horas
+
+def calcular_valor_hr(salario, carga):
+    return salario / carga
+
+def valor_hora_extra(valor_hr):
+    ''' hora extra 50% '''
+    return valor_hr * 1.5
+
+def quantidade_valor_extra(valor_extra, quantidade):
+    return valor_extra * quantidade
+
+def calculo_sal(salario,quantidade_valor):
+    return salario + quantidade_valor
+
+def sistema():
+    while True:
+        dados = {}
+        salario = float(input('Salario: '))
+        valor_hora  = calcular_valor_hr(salario,220)
+        print('Valor hora R$',valor_hora)
+
+        valor_extra = valor_hora_extra(valor_hora)
+        print('Valor hora extra R$', valor_extra)
+
+        quantidade  = float(input('Quantidade: '))
+        quantidade_valor  = quantidade_valor_extra(valor_extra, quantidade)
+        print('Quantidade R$', quantidade_valor)
+
+        sal = calculo_sal(salario,quantidade_valor)
+        print('Salario', sal)
+
+        dados['Salario'] = salario
+        dados['Hora extra '] = valor_extra
+        dados['Quantidade de extra'] = quantidade_valor
+        dados['Salario  + extra'] = sal
+        print(dados)
+
+sistema()
+
+input("Digite enter para sair!")
